@@ -1,0 +1,38 @@
+.App {
+  background-color: #282c34;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.grid-container {
+  width: 100%;
+}
+
+.fade-enter {
+  /* opacity: 0; */
+  width: 120%;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: width 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
