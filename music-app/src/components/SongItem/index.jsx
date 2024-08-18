@@ -15,7 +15,7 @@ const Img = styled("img")({
   display: "block",
   width: "100%",
   height: "100%",
-  borderRadius: "50%", // Make sure the image is a circle
+  borderRadius: "50%",
 });
 
 export const SongItem = ({ song }) => {
@@ -25,8 +25,6 @@ export const SongItem = ({ song }) => {
 
   useEffect(() => {
     const audio = audioRef.current;
-
-    // Set the duration when metadata is loaded
     const handleLoadedMetadata = () => {
       setDuration(audio.duration);
     };
@@ -66,7 +64,6 @@ export const SongItem = ({ song }) => {
             src={`https://cms.samespace.com/assets/${song?.cover}`}
           />
         </ButtonBase>
-
         <Box>
           <Typography
             gutterBottom
@@ -81,7 +78,6 @@ export const SongItem = ({ song }) => {
             }}>
             {song.name}
           </Typography>
-
           <Typography
             variant='body2'
             color='text.secondary'
@@ -96,7 +92,6 @@ export const SongItem = ({ song }) => {
           </Typography>
         </Box>
         <Box flexGrow={1} />
-
         <Grid item xs={1}>
           <Typography
             variant='subtitle1'

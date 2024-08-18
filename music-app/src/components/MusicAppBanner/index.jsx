@@ -17,9 +17,6 @@ export const MusicAppBanner = () => {
           width={isMobile ? "110" : "134"}
           height={isMobile ? "30" : "40"}
         />
-        <Menu>
-          <MenuItem>For you</MenuItem>
-        </Menu>
       </Box>
     </div>
   );

@@ -7,11 +7,9 @@ import { SongItem } from "../SongItem";
 
 export const SongList = () => {
   const options = ["For You", "Top Tracks"];
-  // const [selected, setSelected] = useState(options[0]);
   const [query, setQuery] = useState("");
   const {
     forYouSongs,
-    isMobile,
     topTracks,
     currPlaylist,
     setCurrentPlaylist,
